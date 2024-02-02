@@ -23,3 +23,22 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.header .nav-bar')) {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+

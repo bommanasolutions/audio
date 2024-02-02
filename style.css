@@ -4,6 +4,11 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+.imagesrc
+{
+	height:100px;
+	width:100px;
+}
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
@@ -732,6 +737,94 @@ transform:scale(1.05);
 	
 	
 }
+
+
+
+
+
+
+
+	
+/* Media Query For Mobile */
+@media only screen and (max-width: 767px) {
+  .cta {
+    font-size: 1.8rem;
+    padding: 15px 40px;
+  }
+  h1.section-title {
+    font-size: 4.5rem;
+  }
+
+  #hero h1 {
+    font-size: 5rem;
+  }
+
+  #services .service-bottom .service-item {
+    flex-basis: 100%;
+    margin: 5%;
+  }
+
+  #projects .project-item {
+    height: auto;
+  }
+  #projects .all-projects .project-info,
+  #projects .all-projects .project-img {
+    height: auto;
+  }
+
+  #about .about {
+    flex-direction: column;
+  }
+  #about .col-left {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+  }
+  #about .about .col-left .about-img::after {
+    left: auto;
+    top: auto;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  #about .col-right {
+    text-align: center;
+    padding: 20px;
+  }
+  #about .col-right h1 {
+    text-align: center;
+  }
+
+  #contact .contact {
+    padding: 60px 20px;
+    min-width: auto;
+  }
+  #contact .contact-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact .contact-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #contact .contact-item:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  #contact .contact-item .icon {
+    height: 80px;
+    width: 80px;
+  }
+  #contact .contact-item .icon img {
+    object-fit: cover;
+  }
+  #contact .contact-item .contact-info {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
 
 
 
